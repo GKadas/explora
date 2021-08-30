@@ -22,3 +22,9 @@ function App() {
 }
 
 export default App;
+
+<Router>
+  <Switch>
+    <Route></Route>
+  </Switch>
+</Router>;

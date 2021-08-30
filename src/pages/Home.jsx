@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AppsIcon from "@material-ui/icons/Apps";
 import { Avatar } from "@material-ui/core";
-
 import "../CSS/Home.css";
+import Search from "../pages/Search";
 
 function Home() {
   return (
@@ -20,8 +20,14 @@ function Home() {
           <Avatar />
         </div>
       </div>
-      <div className="home_Body">
-        <h1> This is Home</h1>
+      <div className="home_body">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          alt=""
+        />
+        <div className="home_inputContainer">
+          <Search />
+        </div>
       </div>
     </div>
   );
