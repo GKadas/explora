@@ -3,17 +3,18 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Button, TextField, Grid } from "@material-ui/core";
 import Home from "./pages/Home";
 import "./pages/Search";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/search">
-            <h1>This is the search page</h1>
+          <Route exact path="/search">
+            <SearchPage />
           </Route>
         </Switch>
       </Router>
@@ -22,9 +23,3 @@ function App() {
 }
 
 export default App;
-
-<Router>
-  <Switch>
-    <Route></Route>
-  </Switch>
-</Router>;
